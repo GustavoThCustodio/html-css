@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de soma em HTML</title>
+    <script>
+        function vericarSoma() {
+            var a = parseFloat(document.getElementById("Valor A").value);
+            var b = parseFloat(document.getElementById("Valor A").value);
+            var c = parseFloat(document.getElementById("Valor C").value);
+
+            var somaAB = a+b;
+            var resultado = document.getElementById("Resultado");
+            if(somaAB<c){
+                resultado.innerHTML = "soma de ${a}a e ${b} é ${somaAB},que é menor que ${c}."
+            } else{
+                resultado.innerHTML = "A soma de ${a} e ${b} é ${somaAB}, que não é menor que ${c}."
+            }
+            
+        }
+    </script>
+    <head>
+        <body>
+            <h1>Verificação de Soma em HTML</h1>
+
+            <label for="valorA">valor de A</label>
+            <input type="number" id="valorA">
+
+            <label for="ValorB">Valor de B</label>
+            <input type="number" id="ValorB">
+
+            <label for="ValorC">Valor de C</label>
+            <input type="number" id="ValorC">
+
+            <button onclick="vericarSoma()"> Verificar Soma</button>
+            <p id="resultado"></p>
+
+
+        </body>
+</body>
+</html>
