@@ -62,19 +62,39 @@ section{
     font-size: 3.5vw;
 }
 
+section>p{
+    padding-bottom: 2em;
+
+}
+
 section.normal{
     background-color:white;
     color: black;
 }
 section.imagem>p{
     display: inline-block;
-    width: 400px;
+    padding: 2px;
     background-color: black;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#fundo{  
+    background-color: rgb(99, 77, 121);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#fundo{
+    background-color: rgb(66, 66, 99);
+    background-position: right center;
+    background-size: cover;
 }
 
 section.imagem{
     background-color: rgb(102, 89, 89);
     color: white;
+    background-attachment: fixed;
+    background-size: cover;
 }
 footer{
     background-color: black;
